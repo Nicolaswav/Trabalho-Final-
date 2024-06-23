@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="/css/register_products.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h2>PET FASHION</h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <ul>
+              <li>
+                <a href="dashboard.html" class="active">Página Inicial</a>
+              </li>
+              <li><a href="list_product.html">Lista de Produtos</a></li>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="settings.html">Configurações</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <header>
+        <h1>Cadastro de produtos</h1>
+      </header>
+      <section>
+        <form id="productForm">
+          <div class="form-group">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div class="form-group">
+            <label for="descricao">Descrição *</label>
+            <input type="text" id="descricao" name="descricao" required />
+          </div>
+          <div class="form-group">
+            <label for="categoria">Categoria *</label>
+            <select id="categoria" name="categoria" required>
+              <option value="Cachorro">Cachorro</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="preco">Preço *</label>
+            <input type="text" id="preco" name="preco" required />
+          </div>
+          <div class="form-actions">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="/js/register_product.js"></script>
+  </body>
+</html>
